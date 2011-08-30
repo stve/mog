@@ -10,9 +10,17 @@ module Mog
       @adapter = options[:adapter] || Faraday.default_adapter
     end
 
+    def track(track_id)
+      request("/v2/tracks/#{track_id}.json")
+    end
+
     def tracks
       response = request('/v2/charts/tracks.json')
       response.tracks
+    end
+
+    def album(album_id)
+      request("/v2/albums/#{album_id}.json")
     end
 
     def albums
@@ -20,9 +28,17 @@ module Mog
       response.albums
     end
 
+    def artist(artist_id)
+      request("/v2/artists/#{artist_id}.json")
+    end
+
     def artists
       response = request('/v2/charts/artists.json')
       response.artists
+    end
+
+    def playlist(playlist_id)
+      request("/v2/playlists/#{playlist_id}.json")
     end
 
     def playlists
