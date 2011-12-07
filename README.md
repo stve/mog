@@ -4,7 +4,7 @@ A Ruby wrapper around the Unofficial Mog API.  I've thus far been able to find 8
 
 ## Installation
 
-    gem install instapaper
+    gem install mog
 
 ## Available Methods
 
