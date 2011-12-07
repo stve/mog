@@ -1,18 +1,23 @@
-Mog
-===
+# Mog
 
-A Ruby wrapper around the Unofficial Mog API.  I've thus far been able to find 4 available API methods.
+A Ruby wrapper around the Unofficial Mog API.  I've thus far been able to find 8 available API methods.
 
-Available Methods
------------------
+## Installation
+
+    gem install instapaper
+
+## Available Methods
 
 * tracks
+* track(track_id)
 * albums
+* album(album_id)
 * artists
+* artist(artist_id)
 * playlists
+* playlist(playlist_id)
 
-Usage
------
+## Usage
 
     require 'mog'
 
@@ -20,8 +25,18 @@ Usage
     >> artists = client.artists
     => [<#Hashie::Rash artists=[<#Hashie::Rash album_count=43 artist_id="187269" artist_image="http://images.musicnet.com/artists/000/187/269/s.jpeg" artist_name="Beyoncé" has_bio=false most_popular_album_id=19970857 most_recent_album_id=55232337 track_count=344>]
 
-Note on Patches/Pull Requests
------------------------------
+## <a name="build"></a>Build Status
+[![Build Status](https://secure.travis-ci.org/spagalloco/mog.png?branch=master)][travis]
+
+[travis]: http://travis-ci.org/spagalloco/mog
+
+## <a name="dependencies"></a>Dependency Status
+[![Dependency Status](https://gemnasium.com/spagalloco/mog.png?travis)][gemnasium]
+
+[gemnasium]: https://gemnasium.com/spagalloco/mog
+
+
+## Contributing
 
 * Fork the project.
 * Make your feature addition or bug fix.
@@ -31,7 +46,6 @@ Note on Patches/Pull Requests
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-Copyright
----------
+## Copyright
 
-Copyright (c) 2011 Steve Agalloco. See LICENSE for details.
+Copyright (c) 2011 Steve Agalloco. See [LICENSE](https://github.com/spagalloco/mog/blob/master/LICENSE.md) for details.
